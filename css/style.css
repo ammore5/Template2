@@ -225,3 +225,27 @@ body{
     animation: bounce 2s infinite;
   }
   
+
+  /*---------- prices section -------------*/
+  .prices{
+    margin-bottom: 12px;
+    margin-top: 12px;
+    padding: 20px 0;
+    background-color: #ddd;
+  }
+
+  .prices .card{
+    background-color: #ddd;
+    border: 1px solid #cecece;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 300px;
+    color: #000000;
+    padding: 4px;
+  }
+  .prices .card .card-header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #f86d6d;
+    padding: 6px;
+  }
