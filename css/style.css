@@ -123,7 +123,7 @@ body{
   }
   .slider__img-gauche {
     background-image: url('../images/slider/s_3.jpg');
-    background-color: rgba(255, 0, 0, 0.5607843137254902);
+    background-color: rgba(0, 152, 255, 0.5607843137254902);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -233,19 +233,34 @@ body{
     padding: 20px 0;
     background-color: #ddd;
   }
+.prices .card{
+  padding: 8px;
+}
 
-  .prices .card{
-    background-color: #ddd;
-    border: 1px solid #cecece;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    width: 300px;
-    color: #000000;
-    padding: 4px;
-  }
-  .prices .card .card-header{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: #f86d6d;
-    padding: 6px;
-  }
+.prices  .card-header{
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+
+}
+.prices .col-lg-3:nth-child(1) .card-header{
+  background-color: #009FC0;
+}
+
+.prices .col-lg-3:nth-child(2) .card-header{
+  background-color: #c00000;
+}
+
+.prices .col-lg-3:nth-child(3) .card-header{
+  background-color: #111f0f;
+}
+
+.prices .col-lg-3:nth-child(4) .card-header{
+  background-color: yellow;
+  text-shadow: 1px 1px 1px .7 black;
+}
+
+.prices .card .card-body{
+  border: 1px solid rgb(168, 165, 165);
+  padding: 8px;
+}
