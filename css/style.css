@@ -321,3 +321,28 @@ body{
   border: 1px solid rgb(168, 165, 165);
   padding: 8px;
 }
+
+
+
+/*---------- statistecs section -----------------*/
+.statistecs{
+  margin: 12px 0;
+  background:url('../images/slider/s_1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 40px 0;
+  position: relative;
+  color: #fff;
+}
+.statistecs .statistecsOverLay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.statistecs i{
+  font-size: 70px;
+}
