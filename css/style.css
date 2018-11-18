@@ -465,3 +465,146 @@ body{
   background-color: #b9b928;
   border-color: #b9b928;
 }
+
+
+/*-----------------------------------------------------------*/
+.ServicesEdit{
+	margin-top: 6px;
+    padding-top: 3px;
+	background-color: #f5f5f5;
+	padding-bottom: 15px;
+}
+
+.ServicesEdit h2{
+	padding-bottom: 11px;
+}
+
+.ServicesEdit p{
+	font-size: 11px;
+	text-align: justify;
+	font-weight: normal;
+}
+
+.image_serv{
+	background-color: #fff;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.image_serv h2{
+	font-size: 20px;
+}
+
+.ServInfo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	padding: 20px;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.ServInfo .btn{
+	margin-top: 4px;
+    font-size: 9px;
+}
+
+.ServInfo a{
+  text-decoration: none;
+}
+
+.ServInfo i{
+  padding: 10px;
+  background: #ddd;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 6px 9px;
+  border-radius: 50%;
+  line-height: 0.9;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+
+}
+
+.ServInfo a:nth-child(1) i{
+  background: #385596;
+}
+
+.ServInfo a:nth-child(2) i{
+  background: #4e9bd8;
+}
+
+.ServInfo a:nth-child(3) i{
+  background: #f00000;
+}
+
+.ServInfo a:nth-child(4) i{
+  background: #005A87;
+}
+
+.ServRight{
+	display: none;
+}
+
+.image_serv:hover .arrow-left{
+	right: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.image_serv:hover .ServInfo{
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.image_serv:hover .ServLeft{
+	display: none;
+}
+.image_serv:hover .ServRight{
+	display: inline;
+}
+
+.image_serv:hover .arrow-left{
+	background:#f04923;
+}
+
+.image_serv img{
+	width: 100px;
+}
+
+.arrow-left{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10%;
+	height: 100%;
+	background: #0078bd;
+	transition: all 0.3s ease-in-out;
+	border: 1px solid #fff;
+}
+
+.arrow-left i{
+	color: #fff;
+	margin-top: 20px;
+	line-height: 13;
+}
+
+.inof_serv h2{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.inof_serv p{
+	font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+    padding: 16px;
+}
+
+
