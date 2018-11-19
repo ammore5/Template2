@@ -1,10 +1,12 @@
+/* $,document */
 $( document ).ready(function() {
 
-  setTimeout(function(){
     $('.loadingOverlay').fadeOut(800,function(){
       $(this).remove();
     })
-  }, 1000);
+
+    wow();
+
 
 
 $('.slider__item').on('mouseover', function(){
@@ -18,4 +20,7 @@ $('.slider__item').on('mouseover', function(){
 
   $('.mainCarousel').height($(window).innerHeight());
  
+ function wow(){
+  new WOW().init();
+}
 });

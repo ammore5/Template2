@@ -60,6 +60,17 @@ body{
   text-shadow: 1px 1px 0.1px black;
 }
 
+.icon-arrow-down{
+  color: #fff;
+  padding: 8px;
+  background: #ffffff3b;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  z-index: 9999;
+  top: 90%;
+  cursor: pointer;
+}
 
   .mainPic .mainPicContent h2{
     top: 50%;
