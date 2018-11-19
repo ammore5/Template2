@@ -1486,10 +1486,10 @@ body{
   background-size: contain;
 }
 .skw-page-1 .skw-page__half--right .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-2 .skw-page__half--left .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-2 .skw-page__half--right .skw-page__content {
   background-image: url("../images/Services/Show/pg-2.jpg");
@@ -1500,10 +1500,10 @@ body{
   background-size: contain;
 }
 .skw-page-3 .skw-page__half--right .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-4 .skw-page__half--left .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-4 .skw-page__half--right .skw-page__content {
   background-image: url("../images/Services/Show/pg-4.jpg");
@@ -1514,10 +1514,10 @@ body{
   background-size: contain;
 }
 .skw-page-5 .skw-page__half--right .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-6 .skw-page__half--left .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-6 .skw-page__half--right .skw-page__content {
   background-image: url("../images/Services/Show/pg-6.jpg");
@@ -1528,10 +1528,10 @@ body{
   background-size: contain;
 }
 .skw-page-7 .skw-page__half--right .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-8 .skw-page__half--left .skw-page__content {
-  background: #1a4e7d;
+  background: #6ab8ff;
 }
 .skw-page-8 .skw-page__half--right .skw-page__content {
   background-image: url("../images/Services/Show/Image_western.jpg");
@@ -1543,7 +1543,7 @@ body{
 
 /*------------ Button --------------*/
 .ServButCss{
-  background:#1a4e7d;
+  background:#6ab8ff;
   color:#fff;
   border:none;
   position:relative;
@@ -1556,7 +1556,7 @@ body{
 }
 .ServButCss:hover{
   background:#fff;
-  color:#1a4e7d;
+  color:#6ab8ff;
 }
 .ServButCss:before,.ServButCss:after{
   content:'';
@@ -1565,7 +1565,7 @@ body{
   right:0;
   height:2px;
   width:0;
-  background: #1a4e7d;
+  background: #6ab8ff;
   transition:400ms ease all;
 }
 .ServButCss:after{
@@ -1577,4 +1577,98 @@ body{
 .ServButCss:hover:before,.ServButCss:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+
+/*------------- Time Line ----------------*/
+.timeDiv{
+  padding-bottom: 10px;
+  /* position: relative; */
+}
+
+
+
+.timeDiv1{
+  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeDiv1:after{
+  content: "";
+  background: #6ab8ff;
+  height: 300px;
+  position: absolute;
+  right: -2px;
+  width: 2px;
+}
+
+.timeDiv2{
+  height: 300px;
+  position: relative;
+}
+
+.timeDiv2 .time2Content{
+  position: absolute;
+  z-index: 99;
+  top: 30%;
+}
+
+.timeDiv3 .time2Content{
+  position: absolute;
+  z-index: 99;
+  top: 30%;
+}
+
+.timeDiv3{
+  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeDiv3:after{
+  content: "";
+  background: #6ab8ff;
+  height: 2px;
+  position: absolute;
+  top: -6px;
+  width: 576px;
+  left: 11px;
+}
+
+.timeDiv3:before{
+  content: "";
+  background: #6ab8ff;
+  height: 300px;
+  position: absolute;
+  top: -6px;
+  width: 2px;
+  left: 8px;
+}
+
+.timeDiv4{
+  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeDiv5:after{
+  content: "";
+  background: #6ab8ff;
+  height: 300px;
+  position: absolute;
+  right: -2px;
+  width: 2px;
+}
+
+.timeDiv5{
+  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.timeDiv6{
+  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
 }
