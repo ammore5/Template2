@@ -6,20 +6,20 @@ body{
  .navbar-inverse .navbar-nav>.open>a:focus,
   .navbar-inverse .navbar-nav>.open>a:hover{
     background-color: #0000;
-    color: #e42322;
+    color: #6ab8ff;
     font-weight: bold;
 }
 .navbar-inverse .navbar-nav>li>a:focus,
  .navbar-inverse .navbar-nav>li>a:hover{
   background-color: #0000;
-  color: #e42322;
+  color: #6ab8ff;
   font-weight: bold;
 }
 .navbar-inverse .navbar-nav>.active>a,
  .navbar-inverse .navbar-nav>.active>a:focus,
   .navbar-inverse .navbar-nav>.active>a:hover{
     background-color: #0000;
-    color: #e42322;
+    color: #6ab8ff;
     font-weight: bold;
 }
 .mainCarousel{
@@ -94,6 +94,17 @@ body{
   position: absolute; 
   width: 100%;
   z-index: 999;
+  top: 15px;
+}
+
+.navbar::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  padding-top: 3px;
+  border-bottom: 3px solid #dddddd7a;
+  margin-left: 16px;
 }
 
 .navbar-inverse{
@@ -130,7 +141,7 @@ body{
   text-align: left;
   padding-right: 0;
   padding-right: 30px;
-  color: #fff;
+  color: #6ab8ff;
   border-color: #fff;
 }
 
@@ -1324,4 +1335,246 @@ body{
 30% {opacity: 1;}
 65% {opacity: 0.3;}
 90% {opacity: 0.8;}
+}
+
+
+.Partners {
+  padding: 3px 0px 20px 0px;
+  position: relative;
+}
+.Partners .btn-primary {
+  margin: 4px;
+}
+.Partners .ServAll {
+  border: 1px solid #ddd;
+  margin-top: 12px;
+}
+.Partners .ImageContent {
+  float: left;
+  width: 50%;
+}
+.Partners h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.Partners .ServBox {
+  direction: rtl;
+  border: 1px solid #ddd;
+  height: 190px;
+  margin-left: 1px;
+  margin-top: 5px;
+  /* End Class .infoServe -- */
+}
+.Partners .ServBox img {
+  width: 70px !important;
+  display: inline-block;
+  float: left;
+  margin-top: 23%;
+}
+.Partners .ServBox .infoServ p {
+  font-size: 14px !important;
+  padding: 3px;
+  color: #000;
+  font-weight: normal;
+  text-align: justify;
+  padding-right: 30px;
+  margin-top: 30px;
+  padding-left: 100px;
+}
+.Partners .ServBox .infoServ h5 {
+  font-family: "alnoaman-medium", "Droid Arabic Kufi", serif;
+  font-size: 19px;
+  color: #000;
+}
+.Partners a {
+  text-decoration: none;
+}
+
+/********************************************/
+.skw-pages {
+  overflow: hidden;
+  position: relative;
+  height: 363px;
+}
+
+.skw-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.skw-page__half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  transition: transform 1s;
+}
+.skw-page__half--left {
+  left: 0;
+  transform: translate3d(-32.4vh, 100%, 0);
+}
+.skw-page__half--right {
+  left: 50%;
+  transform: translate3d(32.4vh, -100%, 0);
+}
+.skw-page.active .skw-page__half {
+  transform: translate3d(0, 0, 0);
+}
+.skw-page__skewed {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 140%;
+  height: 100%;
+  transform: skewX(-18deg);
+  background: #000;
+}
+.skw-page__half--left .skw-page__skewed {
+  left: -40%;
+}
+.skw-page__half--right .skw-page__skewed {
+  right: -40%;
+}
+.skw-page__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 30%;
+  color: #fff;
+  transform: skewX(18deg);
+  transition: transform 1s, opacity 1s;
+  background-size: cover;
+}
+.skw-page__half--left .skw-page__content {
+  padding-left: 30%;
+  padding-right: 30%;
+  transform-origin: 100% 0;
+}
+.skw-page__half--right .skw-page__content {
+  padding-left: 30%;
+  padding-right: 30%;
+  transform-origin: 0 100%;
+}
+.skw-page.inactive .skw-page__content {
+  opacity: 0.5;
+  transform: skewX(18deg) scale(0.95);
+}
+.skw-page__heading {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-top: -220px;
+}
+.skw-page__description {
+  font-size: 18px;
+  text-align: center;
+}
+.skw-page__link {
+  color: #FFA0A0;
+}
+
+.skw-page-1 .skw-page__half--left .skw-page__content {
+  background-image: url("../images/Services/Show/pg-1.jpeg");
+  background-size: contain;
+}
+.skw-page-1 .skw-page__half--right .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-2 .skw-page__half--left .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-2 .skw-page__half--right .skw-page__content {
+  background-image: url("../images/Services/Show/pg-2.jpg");
+  background-size: contain;
+}
+.skw-page-3 .skw-page__half--left .skw-page__content {
+  background-image: url("../images/Services/Show/pg-3.jpg");
+  background-size: contain;
+}
+.skw-page-3 .skw-page__half--right .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-4 .skw-page__half--left .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-4 .skw-page__half--right .skw-page__content {
+  background-image: url("../images/Services/Show/pg-4.jpg");
+  background-size: contain;
+}
+.skw-page-5 .skw-page__half--left .skw-page__content {
+  background-image: url("../images/Services/Show/pg-5.jpg");
+  background-size: contain;
+}
+.skw-page-5 .skw-page__half--right .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-6 .skw-page__half--left .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-6 .skw-page__half--right .skw-page__content {
+  background-image: url("../images/Services/Show/pg-6.jpg");
+  background-size: contain;
+}
+.skw-page-7 .skw-page__half--left .skw-page__content {
+  background-image: url("../images/Services/Show/Image_Transfer.jpg");
+  background-size: contain;
+}
+.skw-page-7 .skw-page__half--right .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-8 .skw-page__half--left .skw-page__content {
+  background: #1a4e7d;
+}
+.skw-page-8 .skw-page__half--right .skw-page__content {
+  background-image: url("../images/Services/Show/Image_western.jpg");
+  background-size: contain;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*------------ Button --------------*/
+.ServButCss{
+  background:#1a4e7d;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size: 1.0em;
+  padding: 0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.ServButCss:hover{
+  background:#fff;
+  color:#1a4e7d;
+}
+.ServButCss:before,.ServButCss:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1a4e7d;
+  transition:400ms ease all;
+}
+.ServButCss:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.ServButCss:hover:before,.ServButCss:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
