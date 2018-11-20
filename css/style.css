@@ -1428,7 +1428,7 @@ body{
   width: 140%;
   height: 100%;
   transform: skewX(-18deg);
-  background: #000;
+  background: #6ab8ff;
 }
 .skw-page__half--left .skw-page__skewed {
   left: -40%;
@@ -1581,94 +1581,253 @@ body{
 
 
 /*------------- Time Line ----------------*/
-.timeDiv{
-  padding-bottom: 10px;
-  /* position: relative; */
+.timeLine{
+  padding-bottom: 20px;
 }
 
+.timeLine .row{
+  padding-top: 40px;
+}
 
+.timeLine h3{
+  border-bottom: 2px solid #3f6385;
+  display: inline-block;
+  padding-bottom: 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.timeLine h3:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 32px;
+  left: 45%;
+  background: #6ab8ff;
+  border-radius: 50%;
+  border: 3px solid #fffffffa;
+}
+
+.timeDiv{
+  padding-bottom: 10px;
+}
+
+.timeDiv  .timeDivOverLay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93%;
+  height: 97%;
+  margin-left: 14px;
+  background-color: #00000091;
+  padding-top: 26px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.timeDiv:hover .timeDivOverLay{
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
 
 .timeDiv1{
-  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
+  background: url('../images/portfolio/pg-3.jpg') no-repeat center center;
   background-size: cover;
   height: 300px;
+  width: 98%;
+  box-shadow: 1px 1px 7px black;
+  cursor: pointer;
 }
 
 .timeDiv1:after{
   content: "";
-  background: #6ab8ff;
+  background: #3f6385;
   height: 300px;
   position: absolute;
-  right: -2px;
-  width: 2px;
+  right: 0;
+  width: 5px;
 }
+
 
 .timeDiv2{
   height: 300px;
   position: relative;
+  
 }
+
+.timeDiv2:after{
+  content: "1";
+  background: #3f6385;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 558px;
+  border-radius: 50%;
+  border: 3px solid #afc1d9;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
 
 .timeDiv2 .time2Content{
   position: absolute;
   z-index: 99;
   top: 30%;
+  padding: 0 50px;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.timeDiv2 .time2Content:hover{
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
+}
+
+
+.timeDiv3{
+  height: 300px;
+  position: relative;
+}
+
+.timeDiv3:after{
+  content: "";
+  background: #6a0d7f;
+  height: 300px;
+  position: absolute;
+  width: 5px;
+  right: -15px;
 }
 
 .timeDiv3 .time2Content{
   position: absolute;
   z-index: 99;
   top: 30%;
+  padding: 0 50px;
+  box-shadow: 1px 1px 1px black;
+  width: 98%;
+  cursor: pointer;
 }
 
-.timeDiv3{
-  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
-  background-size: cover;
-  height: 300px;
-}
-
-.timeDiv3:after{
-  content: "";
-  background: #6ab8ff;
-  height: 2px;
-  position: absolute;
-  top: -6px;
-  width: 576px;
-  left: 11px;
-}
-
-.timeDiv3:before{
-  content: "";
-  background: #6ab8ff;
-  height: 300px;
-  position: absolute;
-  top: -6px;
-  width: 2px;
-  left: 8px;
+.timeDiv3 .time2Content:hover{
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
 }
 
 .timeDiv4{
   background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
   background-size: cover;
   height: 300px;
+  width: 98%;
+  box-shadow: 1px 1px 7px black;
+  cursor: pointer;
+}
+
+.timeDiv4:after{
+  content: "2";
+  background: #6a0d7f;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 573px;
+  border-radius: 50%;
+  border: 3px solid #6ab8ff;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6;
+  top: -19px;
+}
+
+
+.timeDiv5{
+  background: url('../images/portfolio/pg-5.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  width: 98%;
+  box-shadow: 1px 1px 7px black;
+  cursor: pointer;
 }
 
 .timeDiv5:after{
   content: "";
-  background: #6ab8ff;
+  background: #8a0000;
   height: 300px;
   position: absolute;
-  right: -2px;
-  width: 2px;
+  right: 0;
+  width: 5px;
 }
 
-.timeDiv5{
-  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
-  background-size: cover;
-  height: 300px;
-}
 
 .timeDiv6{
-  background: url('../images/portfolio/pg-2.jpg') no-repeat center center;
-  background-size: cover;
   height: 300px;
+}
+
+.timeDiv6:after{
+  content: "1";
+  background: #880000;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 573px;
+  border-radius: 50%;
+  border: 3px solid #dedede;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.6;
+  top: -19px;
+}
+
+.timeDiv6::before{
+  content: "4";
+  background: #ffffff;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 572px;
+  border-radius: 50%;
+  border: 3px solid #6ab8ff;
+  color: #0a0a0a;
+  font-weight: bold;
+  line-height: 1.6;
+  top: 280px;
+}
+
+
+.timeDiv6 .time2Content{
+  position: absolute;
+  z-index: 99;
+  top: 30%;
+  padding: 0 50px;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.timeDiv6 .time2Content:hover{
+  box-shadow: 1px 1px 11px black;
+  cursor: pointer;
+}
+
+.timeLine .timeDivOverLay h2{
+  color: #fff;
+}
+.timeLine .timeDivOverLay i{
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  background: #ffffff4d;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 2.7;
+  font-size: 30px;
+}
+
+.timeLine .timeDivOverLay p{
+font-size: 14px;
+padding: 20px 10px 0px 10px;
+margin-top:7px;
+color: #fff
 }
