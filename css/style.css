@@ -2,6 +2,27 @@ body{
     position: relative;
 }
 
+
+.upBottun{
+  display: none;
+}
+.upBottun .icon-arrow-up{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: #009FC0;
+  border-radius: 50%;
+  top: 530px;
+  left: 20px;
+  z-index: 545454;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
 .navbar-inverse .navbar-nav>.open>a,
  .navbar-inverse .navbar-nav>.open>a:focus,
   .navbar-inverse .navbar-nav>.open>a:hover{
@@ -460,12 +481,22 @@ body{
   padding-bottom: 20px;
   color: #57c4c9;
 }
-.statistecs h2,i{
+.statistecs h2{
   color: #57c4c9;
 }
 
 .statistecs .contactUsForm{
   float: right;
+}
+
+
+
+.copyright i:nth-child(1){
+  color: red;
+}
+
+.copyright .icon-envelope-alt{
+  color: #fff !important;
 }
 
 
@@ -777,8 +808,9 @@ body{
 .footer{
   background: url('../images/slider/s_3.jpg')no-repeat center center;
   background-size: cover;
-  color: #fff;
+  color: #cecece;
   position: relative;
+  padding: 10px;
 }
 
 .footer .footerOverLay{
@@ -787,11 +819,70 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000000ad;
+  background: #000000db;
+}
+
+.footer .siteMap ul{
+  float: left;
+  text-align: left;
+}
+
+/* .footer .siteMap .firstUl{
+  padding-left: 0;
+} */
+
+
+.footer .siteMap ul li{
+   list-style: none;
+   padding: 4px 0;
+  }
+.footer .siteMap ul:nth-last-of-type(3){
+  padding-left: 0;
+}
+
+.footer .siteMap .socio .icons{
+  color: #fff;
+  font-weight: bold;
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 17px;
+  display: inline-block;
+  text-align: center;
+  border: 2px double rgba(255, 255, 255, 0.493);
+  line-height: 37px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.footer .siteMap .socio a{
+  text-decoration: none;
+}
+.footer .siteMap .socio a:nth-child(1) .icons{
+  background: #286090;
+}
+
+.footer .siteMap .socio a:nth-child(2) .icons{
+  background: #F04923;
+}
+
+.footer .siteMap .socio a:nth-child(3) .icons{
+  background: #16CFFD;
+}
+
+.footer .siteMap .socio a:nth-child(4) .icons{
+  background: #C42021;
+}
+
+.footer .siteMap .socio a:nth-child(5) .icons{
+  background: #F89A3A;
+}
+
+.footer .siteMap .socio a:nth-child(6) .icons{
+  background: #B0742C !important;
 }
 
 .copyright {
-  background: #337ab7;
+  background: #57c4c9;
   color: #fff;
   padding-top: 10px;
 }
@@ -816,6 +907,42 @@ body{
   float: right;
 }
 
+.media-object{
+  width: 51px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  height: 60px;
+}
+
+.media-body{
+  font-size: 11px;
+}
+
+
+.footer .AwsomeWork .OurImage{
+  width: 150px;
+  height: 85px;
+}
+
+.footer .AwsomeWork ul{
+  float: left;
+}
+
+.footer .AwsomeWork ul:nth-last-of-type(1){
+  padding-left: 4px;
+}
+
+.footer .AwsomeWork ul:nth-last-of-type(2){
+  padding-left: 0;
+}
+
+.footer .AwsomeWork li{
+  list-style: none;
+  padding: 2px 0;
+  border: 1px solid #ffffff85;
+}
+
+
 /*-------------- Loading Overlay -----------------------------*/
 
 .loadingOverlay{
@@ -823,7 +950,7 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 100%;
   background: #fff;
   z-index: 9999;
 }
@@ -1515,7 +1642,6 @@ color: #fff
 
 /*---------------- subscribe Section ---------------------*/
 .subscribe{
-  margin: 10px 0;
   padding: 50px 0;
   background: #ddd;
 }
